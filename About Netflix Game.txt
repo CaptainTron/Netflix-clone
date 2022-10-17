@@ -1,0 +1,20 @@
+- App build by Vaibhav Yadav
+- Time taken (approx) 9-10 hours
+- Netflix app clone (Basic)
+- Implemented API calls and Used it to get promise
+
+About Netflix Clone App
+This is Basic Netflix Clone App.
+It Uses API promises.
+I've created 'fetchMovies' function that takes(url, domelement, pathtype(poster or banner)) and use url of parameter to make promise, check wheather status is ok or not, if ok then return else
+throw an error.
+Use the data from promise made to pass it to 'showMovies' function as a parameter else throw an error.
+
+Created 'showMovies' function that will take movies, domelement, pathtype as a parameter.
+Take a moviesEl variable, used for loop to go through movies.result that is data from the API promises .
+Created HTML 'img' element and put it to imageElement variable and then setAttribute('data-id',movie.id)
+Set the imageElement.src
+and appended it to moviesEl that we have created earlier.
+And at last we have created 'getOriginals()','getTrendingNow()','getTopRated()' used url and pass it to dynamic function 'fetchmovies' function  that will make promises and return the response from it to showmoves function that will show data to DOM element.
+
+ ------------------------  END -----------------
